@@ -1,0 +1,93 @@
+site_name: Hyperledger Fabric Documentaion
+site_description: A platform for permissioned distributed ledger solutions
+repo_name: 'hyperledger/fabric'
+repo_url: 'https://github.com/hyperledger/fabric'
+edit_uri: ""
+pages:
+- Home: 'index.md'
+- 'Key blockchain concepts': 'blockchain.md'
+- 'Developing blockchain applications':
+    - 'Applications and the Hyperledger Fabric SDKs': 'fabric-sdks.md'
+    - 'Programming Smart contracts and Chaincode': 'chaincode.md'
+    - 'Transaction Flow': 'txflow.md'
+    - 'Accessing the ledger': 'tbd.md'
+    - 'Querying the ledger': 'tbd.md'
+    - 'Updating the ledger': 'tbd.md'
+    - 'Ledger notifications': 'tbd.md'
+    - 'Accessing the transaction log': 'tbd.md'
+    - 'Running Chaincode in Development Mode': 'peer-chaincode-devmode.md'
+- 'Administering a blockchain network':
+    - 'Network Tasks': 'tbd.md'
+    - 'Consortium Tasks': 'tbd.md'
+    - 'Organization Tasks': 'tbd.md'
+    - 'Peer Tasks':
+        - 'Endorsement Policy Tasks': 'endorsement-policies.md'
+    - 'Orderer Tasks': 'tbd.md'
+    - 'Managing Identity': 'msp.md'
+    - 'Channel Tasks':
+      - 'Channel Configuration': configtx.md
+      - 'Generating Channel Configuration': configtxgen.md
+      - 'Channel Reconfiguration': configtxlator.md
+    - 'Certificate Authority Tasks': 'tbd.md'
+- 'Tutorials and samples':
+    - 'Getting Started': 'getting_started.md'
+    - 'Build Your First Network': 'build_network.md'
+    - 'Writing Your First Application': 'write_first_app.md'
+    - 'Chaincode for Developers': 'chaincode4ade.md'
+    - 'Chaincode for Operations': 'chaincode4noah.md'
+    - 'DRIVENET Tutorial': 'tbd.md'
+- 'Reference material':
+    - 'Architecture Explained': 'arch-deep-dive.md'
+    - 'Capabilities': 'capabilities.md'
+    - 'Fabric Model': 'fabric_model.md'
+    - 'Channels': 'channels.md'
+    - 'Gossip': 'gossip.md'
+    - 'Glossary': 'glossary.md'
+    - 'Kafka': 'kafka.md'
+    - 'Ledger': 'ledger.md'
+    - 'FAQ': fabric-FAQ.md
+    - 'Release Notes': releases.md
+- 'General Help': 'questions.md'
+- Contributing: 'CONTRIBUTING.md'
+theme:
+  name: material
+  custom_dir: 'theme'
+extra_css:
+  - 'stylesheets/extra.css'
+extra:
+  social:
+    - type: globe
+      link: https://hyperledger.org
+    - type: github-alt
+      link: https://github.com/hyperledger?utf8=%E2%9C%93&q=fabric&type=&language=
+    - type: twitter
+      link: https://twitter.com/hyperledger
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+copyright: Copyright &copy; 2017 Linux Foundation All Rights Reserved
